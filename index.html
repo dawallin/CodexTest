@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Välkommen till Min GitHub Pages-sida</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Min GitHub Pages-sida</h1>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#intro">Start</a></li>
+            <li><a href="#projects">Projekt</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="intro" class="hero">
+        <div class="container">
+          <h2>Hej! Jag heter Alex</h2>
+          <p>
+            Det här är en enkel GitHub Pages-webbplats skapad som ett exempel på hur
+            man kan presentera projekt, skriva en kort presentation och erbjuda en
+            kontaktväg.
+          </p>
+          <a class="cta" href="#projects">Utforska projekten</a>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projekt</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Portfolio</h3>
+              <p>
+                En personlig portfölj som visar upp mina bästa designer och
+                utvecklingsprojekt.
+              </p>
+              <a href="#" aria-label="Läs mer om portföljen">Läs mer</a>
+            </article>
+            <article class="card">
+              <h3>Blogg</h3>
+              <p>
+                En blogg där jag delar guider och tips om webbutveckling och
+                produktivitet.
+              </p>
+              <a href="#" aria-label="Läs mer om bloggen">Läs mer</a>
+            </article>
+            <article class="card">
+              <h3>Öppna källkod</h3>
+              <p>
+                Små open-source projekt som hjälper andra utvecklare komma igång
+                med nya idéer.
+              </p>
+              <a href="#" aria-label="Läs mer om öppna källkodsprojekt">Läs mer</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--alt">
+        <div class="container">
+          <h2>Om Mig</h2>
+          <p>
+            Jag är en utvecklare som älskar att skapa snygga, snabba och
+            tillgängliga webbplatser. När jag inte kodar hittar du mig i skogen,
+            med en bok eller i köket där jag testar nya recept.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Kontakt</h2>
+          <p>
+            Har du frågor eller vill du samarbeta? Tveka inte att höra av dig!
+          </p>
+          <a class="cta" href="mailto:alex@example.com">Skicka ett mail</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Alex Demo. Byggd med GitHub Pages.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
